@@ -3,7 +3,7 @@ Docu.io - Simple IT documentation application
 
 # Requirements
 ## Functional
-- Static HTML wireframes for the Applications and Servers pages
+- Static HTML wireframes for the Applications, Servers and Add Application pages
 
 # Changelog
 All notable changes to this project will be documented in this file.
@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 0.0.1 - 2017-03-03
 ### Added
 - Added initial PSD designs to repository
+- Created basic HTML wireframes for Applications, Servers and Add Application pages
