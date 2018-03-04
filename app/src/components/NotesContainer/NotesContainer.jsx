@@ -19,6 +19,7 @@ class NotesContainer extends Component{
     }
 
     fetchNotes () {
+        // eslint-disable-next-line no-undef
         fetch('http://127.0.0.1:3001/notes')
             .then(res => res.json())
             .then(json => {
@@ -35,6 +36,7 @@ class NotesContainer extends Component{
     }
 
     handleNewNote () {
+        // eslint-disable-next-line no-undef
         fetch('http://127.0.0.1:3001/notes',
             {
                 headers: {
@@ -48,7 +50,6 @@ class NotesContainer extends Component{
             .then(newNoteObj => {
                 const newNotesList = this.state.notes.slice()
                 newNotesList.push(newNoteObj)
-                console.log(newNotesList)
                 this.setState({
                     newNote: '',
                     notes: newNotesList
