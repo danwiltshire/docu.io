@@ -2,11 +2,11 @@ import React from 'react'
 import { List } from 'semantic-ui-react'
 import { PropTypes } from 'prop-types'
 
-const ContactList = ({name}) => (
+const ContactList = (props) => (
     <List>
         <List.Item>
             <List.Icon name='users' />
-            <List.Content>{ name }</List.Content>
+            <List.Content>{ props.name }</List.Content>
         </List.Item>
         <List.Item>
             <List.Icon name='marker' />
