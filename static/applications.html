@@ -7,17 +7,22 @@
     </head>
 
     <body>
+
         <div class="ui padded grid">
 
             <div class="four wide column blue">
+
+                <!-- Menu -->
                 <div class="ui fluid vertical menu">
                     <a class="item"><i class="file alternate outline icon"></i>Docu.io</a>
                     <a class="active item" href="applications.html"><i class="window restore outline icon"></i>Applications</a>
                     <a class="item" href="servers.html"><i class="server icon"></i>Servers</a>
                 </div>
-            </div>
+
+            </div><!-- /.four.wide.column -->
 
             <div class="twelve wide column">
+
                 <!-- Search -->
                 <div class="ui segment">
                     <div class="ui search">
@@ -28,57 +33,73 @@
                         <div class="results"></div>
                     </div>
                 </div>
+
                 <!-- Table -->
                 <div class="ui segment">
-                        <table class="ui compact celled table">
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Description</th>
-                                    <th>Actions</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Table Item #1</td>
-                                    <td>This item does X, Y and Z</td>
-                                    <td>
-                                        <div class="ui small button">Edit</div>
-                                        <div class="ui small button">Delete</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Table Item #2</td>
-                                    <td>This item does X, Y and Z</td>
-                                    <td>
-                                        <div class="ui small button">Edit</div>
-                                        <div class="ui small button">Delete</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Table Item #3</td>
-                                    <td>This item does X, Y and Z</td>
-                                    <td>
-                                        <div class="ui small button">Edit</div>
-                                        <div class="ui small button">Delete</div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                                <tfoot class="full-width">
-                                        <tr>
-                                        <th colspan="3">
-                                                <a href="add-application.html"><div class="ui small primary button">New</div></a>
-                                            </th>
-                                        </tr>
-                                </tfoot>
-                            </table>
+                    <table class="ui compact celled table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Table Item #1</td>
+                                <td>This item does X, Y and Z</td>
+                                <td>
+                                    <div class="ui small button">Edit</div>
+                                    <div class="ui small button delete">Delete</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Table Item #2</td>
+                                <td>This item does X, Y and Z</td>
+                                <td>
+                                    <div class="ui small button">Edit</div>
+                                    <div class="ui small button delete">Delete</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Table Item #3</td>
+                                <td>This item does X, Y and Z</td>
+                                <td>
+                                    <div class="ui small button">Edit</div>
+                                    <div class="ui small button delete">Delete</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="full-width">
+                            <tr>
+                                <th colspan="3">
+                                    <a href="add-application.html"><div class="ui small primary button">New</div></a>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
-            </div>
 
+            </div><!-- /.twelve.wide.column -->
+
+        </div><!-- /.ui.padded.grid -->
+
+        <!-- Modal -->
+        <div class="ui modal">
+            <div class="header">Delete Item</div>
+            <div class="content">
+                <p>Are you sure you want to delete this item?</p>
+            </div>
+            <div class="actions">
+                <div class="ui cancel button">Cancel</div>
+                <div class="ui approve button red">Delete</div>
+            </div>
         </div>
+        
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
         <script src="js/custom.js"></script>
+
     </body>
 
 </html>

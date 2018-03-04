@@ -18,3 +18,8 @@ $('.ui.dropdown')
 .dropdown({
     fields: categoryContent,
 });
+
+$('.button.delete').click(function() {
+  $('.ui.modal')
+  .modal('show');
+});
