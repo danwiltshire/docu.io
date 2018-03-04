@@ -1,12 +1,10 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import ContactList from '../ContactList/ContactList'
+import NotesContainer from '../NotesContainer/NotesContainer'
 
 const Home = () => (
     <Segment>
-        <ContactList
-            name={'Dan the Man'}
-        />
+        <NotesContainer />
     </Segment>
 )
 
