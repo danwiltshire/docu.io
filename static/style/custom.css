@@ -1,0 +1,3 @@
+.pusher {
+    width: calc(100% - 260px); /*260px is the sidebar width*/
+}
