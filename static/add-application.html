@@ -7,54 +7,55 @@
     </head>
 
     <body>
-        <div class="ui padded grid">
-
-            <div class="four wide column blue">
-                <div class="ui fluid vertical menu">
-                    <a class="item"><i class="file alternate outline icon"></i>Docu.io</a>
-                    <a class="active item" href="applications.html"><i class="window restore outline icon"></i>Applications</a>
-                    <a class="item" href="servers.html"><i class="server icon"></i>Servers</a>
-                </div>
+        
+        <div class="ui visible inverted left vertical menu sidebar">
+            <!-- Menu -->
+            <div class="item">
+                <img class="ui mini image" src="images/logo.png">
             </div>
-
-            <div class="twelve wide column">
-                <!-- Search -->
-                <div class="ui segment">
-                    <div class="ui search">
-                        <div class="ui fluid icon input">
-                            <input class="prompt" type="text" placeholder="Search Docu.io...">
-                            <i class="search icon"></i>
-                        </div>
-                        <div class="results"></div>
-                    </div>
-                </div>
-                <!-- Table -->
-                <div class="ui segment">
-                    <div class="ui medium header">Add Application</div>
-                    <form class="ui form">
-                        <div class="field">
-                            <label>Application Name</label>
-                            <input type="text" name="application-name" placeholder="Application Name">
-                        </div>
-                        <div class="field">
-                            <label>Brief Description</label>
-                            <textarea name="application-description" placeholder="Brief Description"></textarea>
-                        </div>
-                        <div class="field">
-                                <label>Related Servers</label>
-                            <select class="ui fluid search dropdown" multiple="">
-                                <option value="">Servers</option>
-                                <option value="0">NYC-GRAY01</option>
-                                <option value="1">NYC-FM01</option>
-                                <option value="2">NYC-DC01</option>
-                            </select>
-                        </div>
-                        <button class="ui primary button" type="submit">Add</button>
-                        <button class="ui button" type="button">Cancel</button>
-                    </form>
-                </div>
-            </div>
+            <a class="active item" href="applications.html"><i class="window restore outline icon"></i>Applications</a>
+            <a class="item" href="servers.html"><i class="server icon"></i>Servers</a>
         </div>
+
+        <div class="pusher">
+
+            <!-- Search -->
+            <div class="ui segment">
+                <div class="ui search">
+                    <div class="ui fluid icon input">
+                        <input class="prompt" type="text" placeholder="Search Docu.io...">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="ui segment">
+                <div class="ui medium header">Add Application</div>
+                <form class="ui form">
+                    <div class="field">
+                        <label>Application Name</label>
+                        <input type="text" name="application-name" placeholder="Application Name">
+                    </div>
+                    <div class="field">
+                        <label>Brief Description</label>
+                        <textarea name="application-description" placeholder="Brief Description"></textarea>
+                    </div>
+                    <div class="field">
+                            <label>Related Servers</label>
+                        <select class="ui fluid search dropdown" multiple="">
+                            <option value="">Servers</option>
+                            <option value="0">NYC-GRAY01</option>
+                            <option value="1">NYC-FM01</option>
+                            <option value="2">NYC-DC01</option>
+                        </select>
+                    </div>
+                    <button class="ui primary button" type="submit">Add</button>
+                    <button class="ui button" type="button">Cancel</button>
+                </form>
+            </div>
+
+        </div><!-- /.pusher -->
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
