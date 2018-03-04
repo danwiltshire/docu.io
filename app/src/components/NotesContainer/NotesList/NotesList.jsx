@@ -17,7 +17,7 @@ const NotesList = props => {
 }
 
 NotesList.propTypes = {
-    notes: PropTypes.array().isRequired
+    notes: PropTypes.array.isRequired
 }
 
 export default NotesList
