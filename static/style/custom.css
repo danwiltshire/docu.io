@@ -1,3 +1,4 @@
+/* Optimise pusher container width for always visible sidebar */
 .pusher {
     width: calc(100% - 260px); /*260px is the sidebar width*/
 }
