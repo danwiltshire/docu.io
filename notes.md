@@ -15,4 +15,5 @@ sudo npm install express-generator -g
 ```bash
 express --view=pug docu.io
 npm install
+npx create-react-app docu.io
 ```
